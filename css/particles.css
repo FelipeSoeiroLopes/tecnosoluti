@@ -1,0 +1,54 @@
+#particles-js {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    will-change: opacity;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Otimização para diferentes dispositivos */
+@media (max-width: 1200px) {
+    #particles-js {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 768px) {
+    #particles-js {
+        opacity: 0.6;
+        width: 100vw;
+        height: 100vh;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 576px) {
+    #particles-js {
+        opacity: 0.4;
+    }
+}
+
+/* Otimização de performance */
+@media (prefers-reduced-motion: reduce) {
+    #particles-js {
+        animation: none;
+        opacity: 0.5;
+    }
+}
