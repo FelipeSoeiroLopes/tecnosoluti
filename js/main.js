@@ -1,4 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Controle do navbar no scroll
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+            navbar.classList.remove('scrolled', 'scroll-up');
+            return;
+        }
+        
+        if (currentScroll > lastScroll && !navbar.classList.contains('scroll-down')) {
+            // Scrolling down
+            navbar.classList.remove('scroll-up');
+            navbar.classList.add('scroll-down', 'scrolled');
+        } else if (currentScroll < lastScroll && navbar.classList.contains('scroll-down')) {
+            // Scrolling up
+            navbar.classList.remove('scroll-down');
+            navbar.classList.add('scroll-up', 'scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
+
     // Efeito de digitação no hero com verificação de elemento
     const heroTitle = document.querySelector('.hero h1');
     if (heroTitle) {
@@ -17,12 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Dados dos serviços premium atualizados
-    const services = [
-        {
+    const services = [        {
             title: "Consultoria Estratégica em TI",
             icon: "🚀",
             description: "Planejamento tecnológico personalizado para maximizar seus resultados.",
-            link: "https://github.com/FelipeSoeiroLopes/tecnosoluti"
+            link: "cases/consultoria-estrategica.html"
         },
         {
             title: "Segurança Cibernética",
@@ -109,17 +133,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 closeMenu();
             }
         });
-    }
-
-    // Navbar scroll
-    const navbar = document.querySelector('.navbar');
+    }    // Navbar scroll
     if (navbar) {
+        let lastScroll = 0;
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                navbar.classList.remove('scrolled', 'scroll-up', 'scroll-down');
+                return;
             }
+            
+            if (currentScroll > lastScroll && !navbar.classList.contains('scroll-down')) {
+                // Scrolling down
+                navbar.classList.remove('scroll-up');
+                navbar.classList.add('scroll-down', 'scrolled');
+            } else if (currentScroll < lastScroll && navbar.classList.contains('scroll-down')) {
+                // Scrolling up
+                navbar.classList.remove('scroll-down');
+                navbar.classList.add('scroll-up', 'scrolled');
+            }
+            
+            lastScroll = currentScroll;
         });
     }
 

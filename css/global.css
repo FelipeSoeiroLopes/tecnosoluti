@@ -117,7 +117,7 @@ h2 {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    transition: var(--transition-smooth);
+    transition: all 0.3s ease;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -127,6 +127,37 @@ h2 {
     padding: 1.2rem 10%;
     background-color: rgba(7, 12, 23, 0.98);
     box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 1rem 5%;
+        transform: translateY(0);
+    }
+
+    .navbar.scrolled {
+        padding: 0.8rem 5%;
+        background-color: rgba(7, 12, 23, 0.95);
+    }
+
+    .navbar.scroll-down {
+        transform: translateY(-100%);
+    }
+
+    .navbar.scroll-up {
+        transform: translateY(0);
+        background-color: rgba(7, 12, 23, 0.98);
+        box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo img {
+        height: 60px;
+        transition: height 0.3s ease;
+    }
+
+    .navbar.scrolled .logo img {
+        height: 50px;
+    }
 }
 
 .logo {
