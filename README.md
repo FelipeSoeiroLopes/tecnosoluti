@@ -22,6 +22,15 @@
     <img src="https://img.shields.io/badge/GitHub-Repositório-181717?logo=github&style=for-the-badge&logoColor=white" alt="GitHub"/>
   </a>
 </p>
+<p align="center">
+  <a href="http://felipesoeirolopes.github.io/tecnosoluti" target="_blank">
+    <img src="https://img.shields.io/badge/Site%20Online-Acesse%20aqui-27ae60?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Site Online"/>
+  </a>
+</p>
+
+<p align="center">
+  <strong>CNPJ Fictício: 37.456.789/0001-10 (não existe, uso acadêmico)</strong>
+</p>
 
 ## 📚 Sobre o Projeto
 
