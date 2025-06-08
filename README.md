@@ -1,11 +1,18 @@
 <div align="center">
-  <img src="assets/images/tecnosoluTI.png" alt="Logo TecnoSoluti" width="120"/>
-  <h1>TecnoSoluti</h1>
+  <img src="assets/images/tecnosoluTI.png" alt="Logo TecnoSoluti" width="150"/>
+  <h1>🚀 TecnoSoluti</h1>
   <p><strong>Consultoria em TI • ERP • Transformação Digital</strong></p>
   <p>
-    <img src="https://img.shields.io/badge/Projeto-Acadêmico-blue"/>
-    <img src="https://img.shields.io/badge/Empresa-Fictícia-orange"/>
-    <img src="https://img.shields.io/badge/Responsivo-100%25-success"/>
+    <img src="https://img.shields.io/badge/Projeto-Acadêmico-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Empresa-Fictícia-FF6B6B?style=for-the-badge&logo=buffer&logoColor=white"/>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  </p>  <p>
+    <img src="https://img.shields.io/badge/Responsivo-100%25-27AE60?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Status-Finalizado-2ECC71?style=for-the-badge&logo=check-circle&logoColor=white"/>
   </p>
 </div>
 
@@ -34,57 +41,124 @@
 
 ## 📚 Sobre o Projeto
 
-O site da **TecnoSoluti** foi desenvolvido como parte de um trabalho acadêmico sobre implantação de sistemas ERP. O objetivo é simular a presença digital de uma consultoria de TI moderna, com foco em:
+O site da **TecnoSoluti** apresenta um caso real de transformação digital no setor metalúrgico. Desenvolvido como projeto acadêmico, demonstra a implementação de sistemas ERP e soluções tecnológicas modernas na **Inox & Cia**, uma empresa com 300 funcionários e orçamento de R$ 8.5 milhões para modernização digital.
 
-- Implantação de sistemas ERP
-- Consultoria estratégica em TI
-- Segurança cibernética
-- Cloud & DevOps
-- Desenvolvimento sob medida
+### 💡 Case de Sucesso: Inox & Cia
 
-## 🖥️ Tecnologias Utilizadas
+#### ❗ Problemas Identificados
+1. **Gestão de Recursos**
+   - 📦 Estoques e demanda mal geridos
+   - 🔄 Processos manuais e pouca digitalização
 
-- HTML5, CSS3 (com design responsivo e moderno)
-- JavaScript (interações e animações)
-- [Particles.js](https://vincentgarreau.com/particles.js/) (efeito visual de partículas)
+2. **Integração e Comunicação**
+   - 🔗 Falta de integração entre setores
+   - 👥 Visão fragmentada do cliente
+
+3. **Processos e Qualidade**
+   - ⚙️ Planejamento de produção ineficiente
+   - 📊 Qualidade sem padronização
+
+  
+### 🌟 Resultados Alcançados
+
+#### 📊 Métricas de Sucesso
+```
+┌─────────────────────────────────┐
+│ +85% Produtividade Operacional  │
+├─────────────────────────────────┤
+│ -70% Custos Operacionais       │
+├─────────────────────────────────┤
+│ +45% Aumento em Vendas         │
+├─────────────────────────────────┤
+│ -90% Tempo de Processos        │
+└─────────────────────────────────┘
+```
+
+## 🖥️ Tecnologias e Ferramentas
+
+### Frontend
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) Estruturação moderna e semântica
+- ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) Design responsivo e animações
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) Interatividade e dinamismo
+
+### Bibliotecas e Frameworks
+- [Particles.js](https://vincentgarreau.com/particles.js/) - Efeitos visuais
+- [Font Awesome](https://fontawesome.com/) - Ícones e elementos visuais
+- [Google Fonts](https://fonts.google.com/) - Tipografia moderna
+
+### Ferramentas de Desenvolvimento
+- ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white) Editor principal
+- ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white) Controle de versão
+- ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white) Hospedagem do código
 
 ## 📂 Estrutura do Projeto
 
-```
-├── index.html
-├── README.md
-├── assets/
-│   ├── images/
-│   │   └── tecnosoluTI.png
-│   └── icons/
-├── css/
-│   ├── global.css
-│   └── particles.css
-├── js/
-│   ├── main.js
-│   └── particles-config.js
+```bash
+📦 tecnosoluti
+├── 📜 index.html              # Página principal
+├── 📜 README.md               # Documentação
+├── 📂 assets/                 # Recursos estáticos
+│   ├── 📂 images/            # Imagens do site
+│   │   └── 🖼️ tecnosoluTI.png
+│   └── 📂 icons/             # Ícones dos sistemas
+│       ├── 🖼️ pngegg.png           # SAP
+│       ├── 🖼️ icons8-salesforce-48.png
+│       ├── 🖼️ oracle-icon.png
+│       ├── 🖼️ powerbi-icon.png
+│       └── 🖼️ synapse-icon.png
+├── 📂 cases/                 # Casos de estudo
+│   └── 📜 consultoria-estrategica.html
+├── 📂 css/                   # Estilos
+│   ├── 📜 global.css        # Estilos globais
+│   ├── 📜 case-study.css    # Estilos dos casos
+│   └── 📜 particles.css     # Configuração particles
+└── 📂 js/                    # Scripts
+    ├── 📜 main.js           # JavaScript principal
+    └── 📜 particles-config.js
 ```
 
 ## 🚀 Como Visualizar
 
-1. Baixe ou clone este repositório:
+### Método Online
+1. Acesse diretamente: [TecnoSoluti Website](http://felipesoeirolopes.github.io/tecnosoluti)
+
+### Método Local
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/FelipeSoeiroLopes/tecnosoluti.git
+   cd tecnosoluti
    ```
-   git clone https://github.com/FelipeSoeiroLopes/tecnosoluti
-   ```
-2. Abra o arquivo `index.html` no seu navegador.
+2. Abra o arquivo `index.html` em seu navegador
+
+### 📌 Requisitos
+- Navegador moderno (Chrome, Firefox, Edge, Safari)
+- Conexão com internet (para carregar fontes e ícones)
 
 ## 👨‍💻 Autor
 
-- Felipe Soeiro Lopes
-- Projeto para a disciplina de Implantação de Sistemas ERP
+<img src="https://img.shields.io/badge/-Felipe%20Soeiro%20Lopes-181717?style=flat-square&logo=github&logoColor=white"/> 
+
 
 ## 📝 Aviso Legal
 
-> **A TecnoSoluti NÃO é uma empresa real.**
-> Este site é apenas para fins acadêmicos e não oferece serviços reais.
+> ⚠️ **IMPORTANTE**: A TecnoSoluti é uma empresa fictícia
+>
+> Este projeto foi desenvolvido exclusivamente para fins acadêmicos e demonstrativos.
+> Nenhum serviço, contato ou informação aqui apresentada representa uma empresa real.
+> Todos os dados, cases e resultados são simulados para fins educacionais.
+
+## 📊 Status do Projeto
+
+![Status](https://img.shields.io/badge/Status-Finalizado-2ECC71?style=for-the-badge&logo=check-circle&logoColor=white)
+![Última Atualização](https://img.shields.io/badge/Última%20Atualização-8%20Junho%202025-blue?style=for-the-badge&logo=calendar&logoColor=white)
+![Versão](https://img.shields.io/badge/Versão-1.0.0-purple?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
 <div align="center">
-  <sub>Desenvolvido com fins educacionais — 2025</sub>
+  <sub>Desenvolvido com ❤️ para fins educacionais — 2025</sub>
+  <br><br>
+  <a href="https://github.com/FelipeSoeiroLopes/tecnosoluti/stargazers">
+    <img src="https://img.shields.io/github/stars/FelipeSoeiroLopes/tecnosoluti?style=social" alt="Stars"/>
+  </a>
 </div>
