@@ -86,26 +86,77 @@
                 <div class="systems-logos">
                     <h3><i class="fas fa-puzzle-piece"></i> Sistemas Implementados</h3>
                     <div class="logos-grid">
-                        <div class="logo-item">
-                            <img src="..\assets\icons\pngegg.png" alt="SAP Logo">
+                        <div class="logo-item" onclick="openLogoPopup('sap')">
+                            <img src="..\/assets\/icons\/pngegg.png" alt="SAP Logo">
                             <span>SAP S/4HANA</span>
                         </div>
-                        <div class="logo-item">
-                            <img src="..\assets\icons\icons8-salesforce-48.png" alt="Salesforce Logo">
+                        <div class="logo-item" onclick="openLogoPopup('salesforce')">
+                            <img src="..\/assets\/icons\/icons8-salesforce-48.png" alt="Salesforce Logo">
                             <span>Salesforce Sales Cloud</span>
                         </div>
-                        <div class="logo-item">
-                            <img src="..\assets\icons\0b2b68956a9ed7d43af1e33dfb8707d7.png" alt="Oracle Logo">
+                        <div class="logo-item" onclick="openLogoPopup('oracle')">
+                            <img src="..\/assets\/icons\/0b2b68956a9ed7d43af1e33dfb8707d7.png" alt="Oracle Logo">
                             <span>Oracle SCM Cloud</span>
                         </div>
-                        <div class="logo-item">
-                            <img src="..\assets\icons\ca57822f8051facca4500de943a83418.png" alt="Power BI Logo">
+                        <div class="logo-item" onclick="openLogoPopup('powerbi')">
+                            <img src="..\/assets\/icons\/ca57822f8051facca4500de943a83418.png" alt="Power BI Logo">
                             <span>Microsoft Power BI</span>
                         </div>
-                        <div class="logo-item">
-                            <img src="..\assets\icons\pngaaa.com-8142026.png" alt="Azure Synapse Logo">
+                        <div class="logo-item" onclick="openLogoPopup('synapse')">
+                            <img src="..\/assets\/icons\/pngaaa.com-8142026.png" alt="Azure Synapse Logo">
                             <span>Azure Synapse Analytics</span>
                         </div>
+                    </div>
+                    <!-- Popups das logos -->
+                    <div id="logo-popup-bg" class="logo-popup-bg" style="display:none" onclick="closeLogoPopup()"></div>
+                    <div id="logo-popup-sap" class="logo-popup" style="display:none">
+                        <button class="close-popup" onclick="closeLogoPopup()">&times;</button>
+                        <h4>SAP S/4HANA Cloud (ERP)</h4>
+                        <ul>
+                            <li>ERP em nuvem com IA e automação de processos</li>
+                            <li>Dados em tempo real e atualizações constantes</li>
+                            <li>Implantação rápida, redução de custos e conformidade legal</li>
+                            <li>Integração entre unidades (pública, privada ou híbrida)</li>
+                        </ul>
+                    </div>
+                    <div id="logo-popup-salesforce" class="logo-popup" style="display:none">
+                        <button class="close-popup" onclick="closeLogoPopup()">&times;</button>
+                        <h4>Salesforce Sales Cloud (CRM)</h4>
+                        <ul>
+                            <li>Plataforma de CRM com IA para automação de vendas</li>
+                            <li>Centraliza dados dos clientes e prevê resultados</li>
+                            <li>Dashboards em tempo real para metas e pipeline</li>
+                            <li>Aumento da produtividade e fidelização</li>
+                        </ul>
+                    </div>
+                    <div id="logo-popup-oracle" class="logo-popup" style="display:none">
+                        <button class="close-popup" onclick="closeLogoPopup()">&times;</button>
+                        <h4>Oracle SCM Cloud (Supply Chain)</h4>
+                        <ul>
+                            <li>Otimize e conecta toda a cadeia de suprimentos</li>
+                            <li>Planejamento inteligente e rápido</li>
+                            <li>Redução de custos logísticos, melhoria nas entregas</li>
+                            <li>Gestão de manufatura e pedidos</li>
+                        </ul>
+                    </div>
+                    <div id="logo-popup-powerbi" class="logo-popup" style="display:none">
+                        <button class="close-popup" onclick="closeLogoPopup()">&times;</button>
+                        <h4>Microsoft Power BI (BI)</h4>
+                        <ul>
+                            <li>Transforma dados em relatórios visuais interativos</li>
+                            <li>Unifica múltiplas fontes de dados</li>
+                            <li>Decisões baseadas em insights com fácil usabilidade</li>
+                            <li>Acessível para toda a organização</li>
+                        </ul>
+                    </div>
+                    <div id="logo-popup-synapse" class="logo-popup" style="display:none">
+                        <button class="close-popup" onclick="closeLogoPopup()">&times;</button>
+                        <h4>Azure Synapse Analytics (DW)</h4>
+                        <ul>
+                            <li>Plataforma unificada para Data Warehouse e Big Data</li>
+                            <li>Integração com SQL, Spark e Machine Learning</li>
+                            <li>Análises avançadas com alto desempenho</li>
+                        </ul>
                     </div>
                 </div>
 

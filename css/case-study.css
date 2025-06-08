@@ -361,7 +361,87 @@
     font-size: 1.2rem;
 }
 
-
+/* Popups das logos dos sistemas */
+.logo-popup-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(18, 18, 18, 0.75);
+    z-index: 1001;
+    display: none;
+    transition: background 0.3s;
+}
+.logo-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 40px 0 rgba(0,0,0,0.25);
+    padding: 2.5rem 2.2rem 2rem 2.2rem;
+    min-width: 320px;
+    max-width: 95vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 1002;
+    display: none;
+    animation: popupIn 0.25s cubic-bezier(.4,1.4,.6,1) 1;
+}
+@keyframes popupIn {
+    0% { opacity: 0; transform: translate(-50%, -60%) scale(0.95); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+.logo-popup h4 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    background: var(--gradient-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: left;
+}
+.logo-popup ul {
+    list-style: disc inside;
+    color: #fff;
+    font-size: 1.08rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+.logo-popup ul li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+    padding-left: 0.2rem;
+}
+.logo-popup .close-popup {
+    position: absolute;
+    top: 1.1rem;
+    right: 1.3rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 10;
+}
+.logo-popup .close-popup:hover {
+    color: var(--secondary);
+}
+@media (max-width: 600px) {
+    .logo-popup {
+        min-width: 90vw;
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    }
+    .logo-popup h4 {
+        font-size: 1.1rem;
+    }
+    .logo-popup ul {
+        font-size: 0.98rem;
+    }
+}
 
 @media (max-width: 1200px) {
     .case-study {

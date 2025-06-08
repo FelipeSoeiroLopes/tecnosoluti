@@ -288,4 +288,17 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo(0, window.scrollY);
         }, 300);
     });
+
+    // POPUP DAS LOGOS DOS SISTEMAS
+    window.openLogoPopup = function(system) {
+        // Fecha todos os popups
+        document.querySelectorAll('.logo-popup').forEach(p => p.style.display = 'none');
+        document.getElementById('logo-popup-bg').style.display = 'block';
+        const popup = document.getElementById('logo-popup-' + system);
+        if (popup) popup.style.display = 'block';
+    }
+    window.closeLogoPopup = function() {
+        document.getElementById('logo-popup-bg').style.display = 'none';
+        document.querySelectorAll('.logo-popup').forEach(p => p.style.display = 'none');
+    }
 });
