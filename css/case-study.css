@@ -443,9 +443,22 @@
     }
 }
 
+/* Responsividade */
 @media (max-width: 1200px) {
     .case-study {
         padding: 4rem 5%;
+    }
+
+    .methodology-section,
+    .scrum-section,
+    .infra-section,
+    .backup-section,
+    .accessibility-section,
+    .customization-section {
+        padding: 2.5rem 5% 1.5rem;
+    }
+    .methods-grid {
+        gap: 1.5rem;
     }
 }
 
@@ -503,6 +516,33 @@
         padding: 1.2rem 0.7rem 1rem 0.7rem;
         min-height: unset;
     }
+
+    .methodology-section,
+    .scrum-section,
+    .infra-section,
+    .backup-section,
+    .accessibility-section,
+    .customization-section {
+        padding: 2rem 3% 1rem;
+        margin-top: 3rem;
+    }
+    .methods-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .method-card {
+        min-height: auto;
+        padding: 1.5rem 1rem;
+    }
+    .method-icon {
+        font-size: 1.8rem;
+    }
+    .method-card h3 {
+        font-size: 1.15rem;
+    }
+    .method-card ul {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -554,4 +594,156 @@
         font-size: 0.8rem;
         margin-right: 0.3rem;
     }
+
+    .methodology-section h2,
+    .scrum-section h2,
+    .infra-section h2,
+    .backup-section h2,
+    .accessibility-section h2,
+    .customization-section h2 {
+        font-size: 1.8rem;
+    }
+    .method-card {
+        padding: 1.2rem 0.8rem;
+    }
+    .method-card ul {
+        font-size: 0.95rem;
+        padding-left: 1rem;
+    }
+}
+
+/* Seções Metodologia, Scrum, Infra, Backup, Acessibilidade e Customização */
+.methodology-section,
+.scrum-section,
+.infra-section,
+.backup-section,
+.accessibility-section,
+.customization-section {
+    margin: 4rem auto 0 auto;
+    max-width: 1400px;
+    padding: 3.5rem 8% 2.5rem 8%;
+    background: rgba(255,255,255,0.03);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(255,255,255,0.09);
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.10);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.methodology-section + .scrum-section,
+.scrum-section + .infra-section,
+.infra-section + .backup-section,
+.backup-section + .accessibility-section,
+.accessibility-section + .customization-section {
+    margin-top: 2.5rem;
+}
+
+.methodology-section .section-title,
+.scrum-section .section-title,
+.infra-section .section-title,
+.backup-section .section-title,
+.accessibility-section .section-title,
+.customization-section .section-title {
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+.methodology-section h2,
+.scrum-section h2,
+.infra-section h2,
+.backup-section h2,
+.accessibility-section h2,
+.customization-section h2 {
+    font-size: 2.1rem;
+    background: var(--gradient-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.method-card {
+    background: rgba(255,255,255,0.04);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255,255,255,0.09);
+    padding: 2rem 1.5rem 1.5rem;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.method-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-orange);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.12);
+}
+
+.method-card:hover::before {
+    opacity: 1;
+}
+
+.method-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    background: var(--gradient-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    filter: drop-shadow(0 2px 6px rgba(255,140,0,0.12));
+}
+
+.method-card h3 {
+    font-size: 1.25rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.method-card ul {
+    margin: 0.7rem 0 0;
+    padding-left: 1.2rem;
+    color: var(--light-gray);
+    font-size: 1.05rem;
+    list-style: disc outside;
+}
+
+.method-card ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    padding-left: 0.3rem;
+}
+
+.method-card ul li strong {
+    color: var(--secondary);
+    font-weight: 600;
 }
