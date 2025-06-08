@@ -456,9 +456,33 @@
     .accessibility-section,
     .customization-section {
         padding: 2.5rem 5% 1.5rem;
+        margin-top: 3rem;
     }
     .methods-grid {
         gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .method-card {
+        min-height: 260px;
+    }
+    .system-icons {
+        gap: 1.5rem;
+    }
+}
+
+/* Ajustes para telas entre 992px e 1199px */
+@media (max-width: 1199px) and (min-width: 993px) {
+    .case-study h2,
+    .methodology-section h2,
+    .scrum-section h2,
+    .infra-section h2,
+    .backup-section h2,
+    .accessibility-section h2,
+    .customization-section h2 {
+        font-size: 1.9rem;
+    }
+    .method-card {
+        padding: 1.8rem 1.3rem;
     }
 }
 
@@ -473,13 +497,35 @@
 
     .case-stats {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .stat-card {
+        padding: 1.8rem;
     }
 
     .project-schedule {
         padding: 3rem 3% 1.5rem 3%;
+        margin-top: 4rem;
     }
+
     .schedule-grid {
         gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .method-card {
+        padding: 1.8rem 1.2rem;
+        min-height: 240px;
+    }
+
+    .method-icon {
+        font-size: 2rem;
+    }
+
+    .method-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
     }
 }
 
@@ -490,30 +536,50 @@
     }
 
     .case-details {
-        padding: 2rem;
+        padding: 1.8rem;
+        margin-top: 1.5rem;
     }
 
     .case-stats {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
 
     .stat-card {
         padding: 1.5rem;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .stat-icon {
+        margin-bottom: 0;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+        margin-bottom: 0.3rem;
     }
 
     .timeline-item {
         padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .logos-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 0 1.5rem;
     }
 
     .project-schedule {
-        padding: 2rem 1rem 1rem 1rem;
+        padding: 2rem 1.5rem 1.5rem;
+        margin-top: 3rem;
     }
+
     .schedule-card {
-        padding: 1.2rem 0.7rem 1rem 0.7rem;
+        padding: 1.5rem;
         min-height: unset;
     }
 
@@ -545,6 +611,7 @@
     }
 }
 
+/* Ajustes para dispositivos móveis */
 @media (max-width: 576px) {
     .case-hero {
         height: 50vh;
@@ -553,62 +620,204 @@
 
     .hero-subtitle {
         font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .case-details {
+        padding: 1.5rem;
+        margin-top: 1rem;
     }
 
     .case-details h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        gap: 0.8rem;
+    }
+
+    .case-details p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .stat-card {
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+
+    .stat-icon {
+        font-size: 1.8rem;
     }
 
     .stat-number {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .stat-card p {
+        font-size: 1rem;
     }
 
     .logos-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .logo-item {
+        padding: 1.5rem;
     }
     
     .logo-item img {
-        height: 50px;
+        height: 45px;
+    }
+
+    .logo-item span {
+        font-size: 1rem;
     }
 
     .schedule-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
     .schedule-card {
-        padding: 0.8rem 0.3rem 0.8rem 0.3rem;
-        min-height: unset;
-        font-size: 0.98rem;
-    }
-    .schedule-card h3 {
-        font-size: 1.05rem;
-        gap: 0.4rem;
-    }
-    .schedule-card ul {
-        font-size: 0.98rem;
-        padding-left: 0.7rem;
-    }
-    .schedule-step {
-        width: 1.2rem;
-        height: 1.2rem;
-        font-size: 0.8rem;
-        margin-right: 0.3rem;
+        padding: 1.2rem;
+        font-size: 0.95rem;
     }
 
-    .methodology-section h2,
-    .scrum-section h2,
-    .infra-section h2,
-    .backup-section h2,
-    .accessibility-section h2,
-    .customization-section h2 {
-        font-size: 1.8rem;
+    .schedule-card h3 {
+        font-size: 1.1rem;
+        gap: 0.5rem;
     }
-    .method-card {
-        padding: 1.2rem 0.8rem;
-    }
-    .method-card ul {
+
+    .schedule-card ul {
         font-size: 0.95rem;
         padding-left: 1rem;
+    }
+
+    .method-card {
+        padding: 1.2rem;
+        min-height: auto;
+    }
+
+    .method-icon {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .method-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .method-card ul {
+        font-size: 0.95rem;
+    }
+
+    /* Ajustes popups em mobile */
+    .logo-popup {
+        width: 90vw;
+        padding: 1.5rem;
+    }
+
+    .logo-popup h4 {
+        font-size: 1.2rem;
+    }
+
+    .logo-popup ul {
+        font-size: 0.95rem;
+    }
+}
+
+/* Ajustes responsivos adicionais */
+@media (max-width: 480px) {
+    .methodology-section,
+    .scrum-section,
+    .infra-section,
+    .backup-section,
+    .accessibility-section,
+    .customization-section {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .section-title {
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .method-card {
+        margin-bottom: 1rem;
+    }
+
+    .method-card ul li {
+        padding-left: 0.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .stat-card, 
+    .method-card {
+        transform: none !important;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 360px) {
+    .case-hero {
+        min-height: 350px;
+    }
+
+    h2 {
+        font-size: 1.4rem !important;
+    }
+
+    .method-card,
+    .stat-card,
+    .schedule-card {
+        padding: 1rem;
+    }
+
+    .logo-item {
+        padding: 1.2rem;
+    }
+
+    .logo-item img {
+        height: 40px;
+    }
+
+    .method-icon,
+    .stat-icon {
+        font-size: 1.6rem;
+    }
+
+    .stat-number {
+        font-size: 1.6rem;
+    }
+
+    p, li {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Ajustes de orientação para dispositivos móveis */
+@media (max-width: 768px) and (orientation: landscape) {
+    .case-hero {
+        height: 100vh;
+    }
+
+    .methodology-section,
+    .scrum-section,
+    .infra-section,
+    .backup-section,
+    .accessibility-section,
+    .customization-section {
+        padding: 2rem;
+    }
+
+    .methods-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
